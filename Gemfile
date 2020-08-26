@@ -6,10 +6,6 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use sqlite3 as the database for Active Record
-group :development, :test do
- gem 'sqlite3'
-end
-
 group :production do
   gem 'pg'
 end
@@ -48,6 +44,9 @@ gem 'rubocop', '~>0.81.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "database_cleaner"
+  gem "rspec-rails"
+  gem 'sqlite3'
 end
 
 group :development do
