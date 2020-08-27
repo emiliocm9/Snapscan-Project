@@ -1,27 +1,16 @@
+<%= stylesheet_link_tag 'users', media: 'all' %>
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>
+<div class="container-total">
+  <div class="text-container d-flex align-items-center">
+    <h1 class="text-logo text-scan mx-auto">Snapscan</h1>
+  </div>
+  <div class="logs-container">
+    <div class="logins bg-main">
+      <%= link_to 'Log In', new_user_path, class:'link text-casual-bold text-light text-uppercase' %>
+    </div>
+    <div class="logins">
+      <%= link_to 'Sign Up', new_user_path, class:'link text-casual-bold text-dark text-uppercase' %>
+    </div>
+  </div>
+</div>
