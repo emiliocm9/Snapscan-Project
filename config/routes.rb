@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'session/new'
+  get 'session/create'
+  get 'session/destroy'
+  resources :expenses
   resources :groups
   resources :users
   root 'users#index'
