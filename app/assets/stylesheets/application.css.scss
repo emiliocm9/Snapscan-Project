@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap";
+
+.bg-main {
+  background-color: #3778c2;
+}
+
+.bg-second {
+  background-color: #5fb523;
+}
+
+.bg-obscure {
+  background-color: #434b54;
+}
+
+.text-scan {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-casual {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.text-casual-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: none;
+  background-color: transparent;
+}

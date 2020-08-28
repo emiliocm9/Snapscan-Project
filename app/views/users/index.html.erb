@@ -1,0 +1,16 @@
+<%= stylesheet_link_tag 'users', media: 'all' %>
+<p id="notice"><%= notice %></p>
+
+<div class="container-total">
+  <div class="text-container d-flex align-items-center">
+    <h1 class="text-logo text-scan mx-auto">Snapscan</h1>
+  </div>
+  <div class="logs-container">
+    <div class="logins bg-main">
+      <%= link_to 'Log In', new_user_path, class:'link text-casual-bold text-light text-uppercase' %>
+    </div>
+    <div class="logins">
+      <%= link_to 'Sign Up', new_user_path, class:'link text-casual-bold text-dark text-uppercase' %>
+    </div>
+  </div>
+</div>
