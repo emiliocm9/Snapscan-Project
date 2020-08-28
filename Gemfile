@@ -41,6 +41,7 @@ gem 'bootstrap', '~> 4.5'
 gem 'devise'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'jquery-rails'
+gem 'bcrypt', '~> 3.1', '>= 3.1.15'
 
 # Setup linter rubocop
 gem 'rubocop', '~>0.81.0'
