@@ -9,7 +9,7 @@
       <h4 class="text-casual text-uppercase text-light">LOGIN</h4>
     </div>
     <div class="actions">
-      <%= submit_tag "Log in", class:'button text-casual-bold' %>
+      <%= form.submit "Next", class:'button text-casual-bold' %>
     </div>
   </div>
   <% if user.errors.any? %>
@@ -24,12 +24,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="field input">
+    <%= form.text_field :name, placeholder: 'Name', class: 'input-tag' %>
   </div>
 <% end %>
