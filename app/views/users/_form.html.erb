@@ -1,4 +1,17 @@
 <%= form_with(model: user, local: true) do |form| %>
+  <div class="header w-100 bg-main d-flex align-items-center">
+    <div class="primero">
+      <%= link_to root_path, class:'link' do %>
+        <i class="fas fa-arrow-left text-light"></i>
+      <% end %>
+    </div>
+    <div class="d-flex align-items center">
+      <h4 class="text-casual text-uppercase text-light">LOGIN</h4>
+    </div>
+    <div class="actions">
+      <%= submit_tag "Log in", class:'button text-casual-bold' %>
+    </div>
+  </div>
   <% if user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>

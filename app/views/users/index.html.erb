@@ -1,5 +1,7 @@
 <%= stylesheet_link_tag 'users', media: 'all' %>
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+  <p id="notice"><%= notice %></p>
+<% end %>
 
 <div class="container-total">
   <div class="text-container d-flex align-items-center">
@@ -7,7 +9,7 @@
   </div>
   <div class="logs-container">
     <div class="logins bg-main">
-      <%= link_to 'Log In', new_user_path, class:'link text-casual-bold text-light text-uppercase' %>
+      <%= link_to 'Log In', new_session_path, class:'link text-casual-bold text-light text-uppercase' %>
     </div>
     <div class="logins">
       <%= link_to 'Sign Up', new_user_path, class:'link text-casual-bold text-dark text-uppercase' %>
