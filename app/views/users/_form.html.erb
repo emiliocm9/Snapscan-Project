@@ -24,6 +24,18 @@
     </div>
   <% end %>
 
+  <div class="file_real-cont d-flex align-items-center">
+    <div class="file_image-cont">
+      <img src="https://www.kindpng.com/picc/m/285-2855863_a-festival-celebrating-tractors-round-profile-picture-placeholder.png">
+    </div>
+    <div class="file_text-cont">
+      <span>Upload picture</span>
+    </div>
+    <div class="field input-avatar">
+      <%= form.file_field :avatar, class: 'file-button' %>
+    </div>
+  </div>
+
   <div class="field input">
     <%= form.text_field :name, placeholder: 'Name', class: 'input-tag' %>
   </div>
